@@ -33,10 +33,8 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             // 设置 https 代理
             proxy: {
                 // 设置代理
-                '^/mallos/api': {
-                    // target: 'https://iotbase.cmcconenet.com:1005', // 接口域名
-                    target: 'http://10.12.6.24:30808',
-                    // target: 'http://192.168.226.8:9090',
+                '^/sportClimbing/api': {
+                    target: 'localhost:5000',
                     changeOrigin: true, // 是否跨域
                     // pathRewrite: {
                     //   '^.*/mallos/api': '' //需要rewrite重写的,
@@ -45,7 +43,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             },
         },
         build: {
-            outDir: 'mallos/pctpt',
+            outDir: 'sportClimbing',
             assetsDir: 'assets',
             sourcemap: false, //构建后是否生成 source map 文件
             brotliSize: false, // 启用/禁用 brotli 压缩大小报告。 禁用该功能可能会提高大型项目的构建性能
