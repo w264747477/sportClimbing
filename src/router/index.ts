@@ -21,7 +21,7 @@ const routes: Array<RouteRecordRaw> = [
     },
 ];
 const router = createRouter({
-    history: createWebHistory('/mallos/pctpt'),
+    history: createWebHistory('/sportClimbing'),
     routes,
 });
 export default router;
