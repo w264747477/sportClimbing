@@ -2,6 +2,7 @@
   "name": "vite-vue3-ts-pinia",
   "private": true,
   "version": "0.0.0",
+  "homepage": "./",
   "type": "module",
   "scripts": {
     "dev": "vite --mode dev",
