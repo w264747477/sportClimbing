@@ -1,4 +1,4 @@
 NODE_ENV='production'
-VITE_APP_BASE_URL=''
+VITE_APP_BASE_URL='sportClimbing'
 VITE_APP_API_BASE_URL='/'
 VITE_DROP_CONSOLE=true

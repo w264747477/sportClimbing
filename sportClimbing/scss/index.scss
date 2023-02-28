@@ -1,0 +1,273 @@
+#index {
+  position: relative;
+  color: #d3d6dd;
+  height: 100%;
+  width: calc(100vw + 18px);
+  overflow: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  background: url('@/assets/cutFigure/background.png') no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // transform-origin: left top;
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // padding: 16px 16px 0 16px;
+    // background: url('@/assets/cutFigure/background.png') no-repeat;
+    // background-size: cover;
+    // background-position: top left;
+  }
+  .host-body {
+    .dv-dec-10,
+    .dv-dec-10-s {
+      width: 33.3%;
+      height: 5px;
+    }
+    .dv-dec-10-s {
+      transform: rotateY(180deg);
+    }
+    .dv-dec-8 {
+      width: 150px;
+      height: 30px;
+    }
+    .topContainer {
+      width: 100%;
+      height: 5rem;
+      background: url('@/assets/cutFigure/BG@2x.png') no-repeat;
+      overflow: hidden;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      .timeShow {
+        width: 5rem;
+        height: 0.5rem;
+        background-color: #411780;
+        border-radius: 0.05rem;
+        padding: auto;
+        text-align: center;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        line-height: 0rem;
+        .text {
+          font-size: 0.28rem;
+          color: #bcb8ff;
+          white-space: nowrap;
+        }
+      }
+    }
+    .title {
+      position: relative;
+      // width: 500px;
+      letter-spacing: 0.02rem;
+      text-align: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .title-text {
+        text-align: center;
+        // font-size: 40px;
+        // position: absolute;
+        // bottom: 0;
+        // left: 50%;
+        white-space: nowrap;
+        // font-weight: 700;
+        //  transform: translate(-50%);
+        width: 4.14rem;
+        height: 0.38rem;
+        font-size: 0.8rem;
+        font-family: FZPinShangHeiS-B-GB;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 0.38rem;
+        text-shadow: 0px 0.03rem 0.08rem rgba(39, 6, 45, 0.6);
+      }
+      // .dv-dec-6 {
+      //   position: absolute;
+      //   bottom: -30px;
+      //   left: 50%;
+      //   width: 250px;
+      //   height: 8px;
+      //   transform: translate(-50%);
+      // }
+    }
+    .topTotal {
+      div {
+        height: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.04rem;
+        padding-left: 0.08rem;
+        padding-right: 0.08rem;
+        border: 0.01rem solid #2a1f58;
+        span:first-child {
+          color: #b98f35;
+          font-size: 0.12rem;
+        }
+        span:last-child {
+          display: inline-block;
+          margin-left: 0.5rem;
+          font-size: 0.12rem;
+        }
+      }
+      div:nth-child(2) {
+        margin-left: 0.18rem;
+        margin-right: 0.18rem;
+      }
+    }
+    // 第二行
+    // .aside-width {
+    //   width: 40%;
+    // }
+    // .react-r-s,
+    // .react-l-s {
+    //   background-color: #0f1325;
+    // }
+    // .react-right {
+    //   &.react-l-s {
+    //     text-align: right;
+    //     width: 500px;
+    //   }
+    //   font-size: 18px;
+    //   width: 300px;
+    //   line-height: 50px;
+    //   text-align: center;
+    //   transform: skewX(-45deg);
+    //   .react-after {
+    //     position: absolute;
+    //     right: -25px;
+    //     top: 0;
+    //     height: 50px;
+    //     width: 50px;
+    //     background-color: #0f1325;
+    //     transform: skewX(45deg);
+    //   }
+    //   .text {
+    //     display: inline-block;
+    //     transform: skewX(45deg);
+    //   }
+    // }
+    // .react-left {
+    //   &.react-l-s {
+    //     width: 500px;
+    //     text-align: left;
+    //   }
+    //   font-size: 18px;
+    //   width: 300px;
+    //   height: 50px;
+    //   line-height: 50px;
+    //   text-align: center;
+    //   transform: skewX(45deg);
+    //   background-color: #0f1325;
+    //   .react-before {
+    //     position: absolute;
+    //     left: -25px;
+    //     top: 0;
+    //     height: 50px;
+    //     width: 50px;
+    //     background-color: #0f1325;
+    //     transform: skewX(-45deg);
+    //   }
+    //   .text {
+    //     display: inline-block;
+    //     transform: skewX(-45deg);
+    //   }
+    // }
+    .body-box {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      //下方区域的布局
+      .content-box {
+        display: grid;
+        grid-template-columns: 2fr 5fr 2fr;
+        z-index: 999;
+        // background-color: #2a1f58;
+        div {
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+        }
+      }
+      // 底部数据
+      .bototm-box {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        height: 3rem;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showimg {
+  0% {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 1.6rem;
+    content: '';
+    background: linear-gradient(
+      to right,
+      rgba(97, 87, 87, 0) 0,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-45deg);
+  }
+  100% {
+    left: 149%;
+  }
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
