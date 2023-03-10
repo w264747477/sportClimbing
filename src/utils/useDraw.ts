@@ -43,7 +43,7 @@ export default function useDraw() {
     }
   };
   const remCalcRate = () => {
-    const desW = 1920;
+    const desW = 3840;
     const element = document.documentElement;
     const winW = element.clientWidth;
     const ratio = winW / desW;
@@ -53,7 +53,7 @@ export default function useDraw() {
       oMain.style.margin = "0 auto";
       return;
     }
-    element.style.fontSize = ratio * 100 + "px";
+    oMain.style.fontSize = ratio * 100 + "px";
   };
 
   const resize = () => {

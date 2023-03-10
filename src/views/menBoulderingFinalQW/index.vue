@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <Header :msg="headerTitle"></Header>
-    <Title msg=""></Title>
+    <Title msg="Women Speed Qualification"></Title>
 
     <el-table
       :data="tableColInfo"
@@ -14,8 +14,9 @@
       <el-table-column prop="num" label="" width="300" />
       <el-table-column prop="from" label="" width="180" />
       <el-table-column prop="men" label="" width="180" />
-      <el-table-column prop="scoreA" label="" width="180" />
-      <el-table-column prop="scoreB" label="" />
+      <el-table-column prop="scoreA" label="A 赛道" width="180" />
+      <el-table-column prop="scoreB" label="B 赛道" width="180" />
+      <el-table-column prop="score" label="" />
     </el-table>
     <el-pagination
       class="mt15 pagon"
@@ -37,9 +38,8 @@ import Title from "@/components/title.vue";
 import { left } from "@popperjs/core";
 import { onMounted, reactive } from "vue";
 import { ref } from "vue";
-import diamond from "./components/diamond.vue";
 import API from "@/api/index";
-let headerTitle = ref('"中国体育彩票"第二十八届全国攀岩锦标赛');
+let headerTitle = ref("2021届第十四届全国运动会攀岩比赛成年组速度练习赛");
 defineProps<{ msg: string }>();
 let pageInfo = reactive({
   page: 1,
@@ -78,16 +78,15 @@ let tableColInfo = reactive([
   {
     index: "1",
     num: "039",
-
     from: "湖北",
     men: "张三",
     scoreA: "6",
-    scoreB: "8",
+    scoreB: "7",
+    score: "6",
   },
   {
     index: "2",
     num: "039",
-
     from: "湖北",
     men: "高规格",
     scoreA: "6",

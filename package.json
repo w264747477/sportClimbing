@@ -40,6 +40,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.7.0",
+    "flag-icon-css": "^4.1.7",
+    "leader-line-vue": "^2.1.1",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.23",
     "prettier": "^2.7.1",

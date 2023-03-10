@@ -102,6 +102,7 @@ const headerRowStyle = ({ row, column, rowIndex, columnIndex }) => {
     color: "#ecffff",
     // borderRadius: "20px",
     marginBottm: "0.1rem",
+    paddingLeft: "12px",
   };
 };
 const changeCellStyle = ({ row, column, rowIndex, columnIndex }) => {

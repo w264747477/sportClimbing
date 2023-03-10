@@ -15,7 +15,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <RouterView />
+  <div class="app">
+    <router-view />
+  </div>
 </template>
 
 <style scoped>
@@ -29,5 +31,11 @@ onUnmounted(() => {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #020308; */
+  overflow: hidden;
 }
 </style>

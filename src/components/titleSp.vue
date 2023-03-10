@@ -12,15 +12,21 @@ defineProps<{ msg: string }>();
 
 <style scoped lang="scss">
 .main_title {
-  width: 100%;
-  height: 2rem;
-  font-size: 1rem;
-  background-color: #e4e3e0;
+  width: 30%;
+  height: 3.5rem;
+  font-size: 1.5rem;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
+  background: url("@/assets/images/titleSp.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .title {
     float: left;
     padding-left: 0.5rem;
-    line-height: 2rem;
+    line-height: 3rem;
   }
 }
 </style>

@@ -24,11 +24,15 @@ defineProps<{ msg: string }>();
   width: 100%;
   font-size: 2rem;
   // background-color: #d6cece;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   .img {
-    width: 100%;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
     height: 100%;
-    background: url("@/assets/images/header2.jpg");
+    background: url("@/assets/images/header.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     display: flex;
@@ -39,7 +43,7 @@ defineProps<{ msg: string }>();
   .title {
     color: #fff;
     line-height: 8rem;
-    height: 8rem;
+    height: 4rem;
     // line-height: 3rem;
   }
   .left {
