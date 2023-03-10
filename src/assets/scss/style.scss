@@ -141,6 +141,9 @@ a {
 .flexam {
   align-items: center;
 }
+.flex{
+  display: flex;
+}
 //flex
 @each $key, $value in $flex-jc {
   .jc-#{$key} {

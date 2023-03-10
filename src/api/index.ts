@@ -1,3 +1,12 @@
-import * as login from './modules/login';
+import {
+  getMenBoulderingFinal,
+  getMenBoulderingFinalN,
+} from "./modules/menBoulderingFinal";
 
-export default Object.assign({}, login);
+export default Object.assign(
+  {},
+  {
+    getMenBoulderingFinal,
+    getMenBoulderingFinalN,
+  }
+);

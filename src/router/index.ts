@@ -1,14 +1,16 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
-const Home = () => import("@/views/home.vue");
+const MenBoulderingFinal = () => import("@/views/menBoulderingFinal/index.vue");
+const MenBoulderingFinalN = () =>
+  import("@/views/menBoulderingFinalN/index.vue");
 const routes: Array<RouteRecordRaw> = [
   {
     path: "",
-    redirect: "/hello",
+    redirect: "/menBoulderingFinal",
   },
   {
     path: "/",
-    redirect: "/hello",
+    redirect: "/menBoulderingFinal",
   },
   {
     path: "/hello",
@@ -20,13 +22,22 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: HelloWorld,
   },
+
   {
-    path: "/home",
-    name: "Home",
+    path: "/menBoulderingFinal",
+    name: "MenBoulderingFinal",
     meta: {
-      title: "home",
+      title: "MenBoulderingFinal",
     },
-    component: Home,
+    component: MenBoulderingFinal,
+  },
+  {
+    path: "/menBoulderingFinalN",
+    name: "MenBoulderingFinalN",
+    meta: {
+      title: "MenBoulderingFinalN",
+    },
+    component: MenBoulderingFinalN,
   },
 ];
 const router = createRouter({
